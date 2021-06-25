@@ -16,6 +16,7 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { ChartModule } from 'angular2-chartjs';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   imports: [
@@ -32,9 +33,23 @@ import { ChartModule } from 'angular2-chartjs';
     MatTableModule,
     MatCardModule,
     ChartModule,
-    RouterModule.forRoot([{ path: '', component: TableComponent }])
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: ChartComponent
+      },
+      {
+        path: 'table',
+        component: TableComponent
+      }
+    ])
   ],
-  declarations: [AppComponent, ProductListComponent, TableComponent],
+  declarations: [
+    AppComponent,
+    ProductListComponent,
+    TableComponent,
+    ChartComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
