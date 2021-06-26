@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChartComponent implements OnInit {
   
-  type = 'line';
+  type = 'bar';
   data = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
@@ -19,7 +19,15 @@ export class ChartComponent implements OnInit {
   };
   options = {
     responsive: true,
-    maintainAspectRatio: false
+    plugins: {
+      legend: {
+        position: 'top',
+        },
+      title: {
+        display: true,
+        text: 'Chart.js Bar Chart'
+        }
+      }
   };
 
 
