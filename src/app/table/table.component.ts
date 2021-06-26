@@ -60,6 +60,7 @@ export class TableComponent implements OnInit {
   ];
 
   dataSource = ELEMENT_DATA;
+  clickedRows = new Set<PeriodicElement>();
 
   constructor() {}
 

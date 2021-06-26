@@ -1,5 +1,16 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+mat-toolbar {
+  flex-basis: auto;
+}
 
+mat-sidenav-container {
+  flex-grow: 1;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

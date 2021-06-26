@@ -17,6 +17,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { ChartModule } from 'angular2-chartjs';
 import { ChartComponent } from './chart/chart.component';
+import { AtendimentoComponent } from './atendimento/atendimento.component';
 
 @NgModule({
   imports: [
@@ -36,7 +37,7 @@ import { ChartComponent } from './chart/chart.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: ChartComponent
+        component: AtendimentoComponent
       },
       {
         path: 'table',
@@ -48,7 +49,8 @@ import { ChartComponent } from './chart/chart.component';
     AppComponent,
     ProductListComponent,
     TableComponent,
-    ChartComponent
+    ChartComponent,
+    AtendimentoComponent
   ],
   bootstrap: [AppComponent]
 })
